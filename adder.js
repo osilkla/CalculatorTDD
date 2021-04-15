@@ -1,5 +1,5 @@
-function sum(a=0,b=0){
-  return a+b
+function sum(...numb){
+  return numb.reduce((total,num)=>total+num,0)
 }
 
 module.exports = sum;
